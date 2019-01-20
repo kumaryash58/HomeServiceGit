@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>
+webpage
+</title>
+
+<style type="text/css">
+*{
+padding: 0px;
+margin: 0px;
+}
+#hd{
+height: 150px;
+width: 100%;
+position: fixed;
+transition: all 0.4s;
+color: red;
+background: #ccc;
+}
+div{
+height: 2000px;
+}
+</style>
+</head>
+<body>
+
+<header id="hd">
+hey, there....
+</header>
+<div> </div>
+<a href="tel:+917987302217">click here</a>
+
+<script type="text/javascript">
+function scroll(){
+var top= document.getElementById('hd');
+var ypos=window.pageYOffset;
+if(ypos>587){
+top.style.height="70px";
+}
+else{
+top.style.height="150px";
+}
+}
+window.addEventListener("scroll",scroll);
+
+</script>
+</body>
+</html>
